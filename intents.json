@@ -1,0 +1,73 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["xin chao", "chao ban", "toi co cau hoi","Hey","Hola", "Hello"],
+         "responses": ["chao ban, vui long dat cau hoi"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "ket thuc"],
+         "responses": ["cam on ban da su dung chatbot, hen gap lai"],
+         "context": [""]
+        },
+        {"tag": "khai niem",
+         "patterns": ["co dien tu la gi "],
+         "responses": ["la su ket hop giua dien, co khi,robot, ki thuat may tinh,..."],
+         "context": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""]
+        },
+        {"tag": "diem ",
+         "patterns": ["diem cua cac nam", "diem chuan co dien tu ute","diem chuan"],
+         "responses": ["diem cdt he dai tra qua cac nam la 23.1(nam 2019), 26(nam 2020), 26,25(nam 2021)"],
+         "context": [""]
+        },
+        {"tag": "viec lam",
+         "patterns": ["hoc xong lam gi","cong viec" ],
+         "responses": ["ban co the lam ki su thiet ke, ki su ki thuat, ki su van hanh, ki su bao tri,giang vien cho cac truong dai hoc,..."],
+         "context": [""]
+        },
+        {"tag": "nhan su",
+         "patterns": [" truong nganh la ai","thong tin truong nganh" ],
+         "responses": ["ts.Vu Quang Huy (truong nganh),sdt:0918748924, mail:huyvq@hcmute.edu.vn"],
+         "context": [""]
+        },
+        {"tag": "tin chi",
+         "patterns": ["tong so tin chi", "so tin chi phai hoan thanh","so chi phai hoc"],
+         "responses": ["132 chi (truoc khoa 2019), 150 chi(tu khoa 2019 tro di)"],
+         "context": [""]
+        },
+        {"tag": "chi tiet",
+         "patterns": ["chi tiet"],
+         "responses": ["47 tin chi dai cuong,31 chi co so nganh, 38 chi chuyen nganh,7 chi thuc tap, 12 chi anh van, 15 chi tu chon"],
+         "context": [""]
+        },
+        {"tag": "cac he",
+         "patterns": ["cac he dao tao " ],
+         "responses": ["gom co 3 he chinh: dai tra, chat luong cao tieng viet,chat luong cao tieng anh "],
+         "context": [""]
+        },
+        {"tag": "thoi gian",
+         "patterns": ["thoi han ra truong"," hoc bao lau"],
+         "responses": ["chuong trinh keo dai tu 3 den 4,5 nam tuy theo trinh do"],
+         "context": [""]
+        },
+        {"tag": "hospital_search",
+         "patterns": ["Lookup for hospital", "Searching for hospital to transfer patient", "I want to search hospital data", "Hospital lookup for patient", "Looking up hospital details" ],
+         "responses": ["Please provide hospital name or location"],
+         "context": ["search_hospital_by_params"]
+        },
+        {"tag": "search_hospital_by_params",
+         "patterns": [],
+         "responses": ["Please provide hospital type"],
+         "context": ["search_hospital_by_type"]
+        },
+        {"tag": "search_hospital_by_type",
+         "patterns": [],
+         "responses": ["Loading hospital details"],
+         "context": [""]
+        }
+   ]
+}
